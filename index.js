@@ -91,8 +91,8 @@ module.exports = function gulpDoxx(opts) {
       } else {
         var fileUrl = file.relative + '.' + opts.targetExtension;
       }
-      
-      dox = doxxParse(file.path);
+
+      dox = doxxParse(file);
       symbols = doxxSymbols(dox, targetName);
       
       allFiles.push({
